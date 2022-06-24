@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@100;300&display=swap');
+/*--------------------------------------Général--------------------------------------*/
+nav{
+
+}
+
+body {
+    background-color: #158EBD;
+    font-family: 'Roboto', sans-serif;
+    min-height: 0px;
+}
+h1 {
+    margin-top: 160px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+/*---------------------------------------Affichage------------------------------------------*/
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.vertical-tab{
+    display: table;
+}
+.vertical-tab .nav-tabs{
+    width: 27%;
+    min-width: 27%;
+    border: none;
+    vertical-align: top;
+    display: table-cell;
+}
+.vertical-tab .nav-tabs li{ float: none; }
+.vertical-tab .nav-tabs li a{
+    color: #FF8A19;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 0 0 8px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+    color: #fff;
+    background-color: #FF8A19;
+    border: none;
+}
+.vertical-tab .nav-tabs li a:before{
+    content: '';
+    height: 100%;
+    width: 70%;
+    border: 2px solid #FF8A19;
+    border-right: none;
+    border-radius: 40px 0 0 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li.active a:before,
+.vertical-tab .nav-tabs li a:hover:before{
+    width: 100%;
+}
+.vertical-tab .tab-content{
+    color: #888;
+    background: repeating-linear-gradient(45deg, transparent,transparent 10px,rgba(255,67,0,0.03) 10px, rgba(255,67,0,0.03) 20px);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 23px;
+    padding: 20px;
+    border: 2px solid #FF8A19;
+    border-radius: 0 30px 30px 0;
+    display: table-cell;
+}
+.vertical-tab .tab-content h3{
+    color: #FF8A19;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 7px;
+}
+@media only screen and (max-width: 479px) {
+    .vertical-tab .nav-tabs {
+        width: 100%;
+        margin: 0 0 15px;
+        display: block;
+    }
+
+    .vertical-tab .nav-tabs li a {
+        padding: 15px 10px 14px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    .vertical-tab .nav-tabs li a:before {
+        width: 100%;
+        height: 70%;
+        border-radius: 30px 30px 0 0;
+        border: 2px solid #FF8A19;
+        border-bottom: none;
+    }
+
+    .vertical-tab .nav-tabs li.active a:before,
+    .vertical-tab .nav-tabs li a:hover:before {
+        height: 100%;
+    }
+
+    .vertical-tab .tab-content {
+        font-size: 14px;
+        border-radius: 0 0 30px 30px;
+        display: block;
+    }
+}
+/*-----------------------------------BackOffice----------------------------------------------------*/
+.ajouter-fiche{
+    margin-bottom: 30px;
+        border-radius: 6px;
+        border: white;
+        background-color: #FF8A19;
+        font-size: 20px;
+        color: white; !important;
+}
+
+.scrollit {
+    overflow-y:scroll;
+    max-height:320px;
+}
+
+.scrollit::-webkit-scrollbar{
+    background-color: #FF8A19;
+    width: 15px;
+}
+.scrollit::-webkit-scrollbar-thumb{
+    background-color: white;
+    width: 10px;
+}
+
+table#myTable th{
+    background-color:#FF8A19;
+    color: white;
+}
+
+table#myTable td{
+    padding-top: 10px;
+}
+
+/*.couleur{*/
+/*    background-color: #A2C4C9;*/
+/*    color: white;*/
+/*}*/
+/*.ajouter-praticien:hover{*/
+/*    background-color: #A2C4C9;*/
+/*    color: black;*/
+/*}*/
+/*.ajouter-praticien{*/
+/*    margin-bottom: 30px;*/
+/*    border-radius: 9px;*/
+/*    background-color: #A2C4C9;*/
+/*    font-size: 20px;*/
+/*    color: white; !important;*/
+/*}*/
+
+/*#modif{*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*.no-modif*/
+/*{*/
+/*    background-color: #A2C4C9;*/
+/*    border: none;*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*#modif:hover*/
+/*{*/
+/*    background-color: white;*/
+/*}*/
+
+/*.activite-liste{*/
+/*  margin: 0 auto;*/
+/*}*/
+/*!*------------------------------------------------Page Modification Praticiens--------------------------------------------*!*/
+
+/*select{*/
+/*    border-radius: 9px;*/
+/*    border-color: black;*/
+/*    max-width: 450px;*/
+
+/*}*/
+
+
+/*!*------------------------------------------Page Ajouter Activités----------------------------------------------*!*/
+
+/*#lien{*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+/*#lien:hover{*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+/*#lien:focus{*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+/*#lien:active{*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
